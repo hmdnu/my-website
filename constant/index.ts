@@ -24,33 +24,53 @@ export const navItems = [
   },
 ];
 
-export const skills = {
-  frontend: ["Html/Css", "React.js", "Next.js", "Tailwind", "Bootstrap"],
-  backend: ["Node.js", "Express.js", "Mongodb"],
-  language: ["Javascript", "Typescript"],
-  Tools: ["VS Code", "Figma", "Photoshop"],
-};
+export const skillsets = [
+  {
+    id: 1,
+    name: "Frontend",
+    skills: ["Html/Css", "React.js", "Next.js", "Tailwind", "Bootstrap"],
+  },
+  {
+    id: 2,
+    name: "Backend",
+    skills: ["Node.js", "Express.js", "Mongodb"],
+  },
+  {
+    id: 3,
+    name: "Languages",
+    skills: ["Html/Css", "Javascript", "Typescript"],
+  },
+  {
+    id: 4,
+    name: "Tools",
+    skills: ["VS Code", "Figma", "Photoshop"],
+  },
+];
 
 export const sosmeds = [
   {
     id: 1,
     name: "Facebook",
     img: sosmed.facebook,
+    link: "https://web.facebook.com/dhaniuyan",
   },
   {
     id: 2,
     name: "Linkedln",
     img: sosmed.linkedln,
+    link: "https://www.linkedin.com/in/hamdan-ubaidillah-116b7a247",
   },
   {
     id: 3,
     name: "Instagram",
     img: sosmed.instagram,
+    link: "https://www.instagram.com/hmdnubaidillah",
   },
   {
     id: 4,
     name: "Github",
     img: sosmed.github,
+    link: "https://github.com/HamdanUbaidillah",
   },
 ];
 
