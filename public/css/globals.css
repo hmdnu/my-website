@@ -32,6 +32,6 @@
     @apply flex justify-center items-center;
   }
   .button {
-    @apply w-[165px] h-[50px] max-sm:w-[130px] sm:text-[20px] text-[18px] text-white rounded-[10px] font-semibold grid place-content-center cursor-pointer hover:translate-y-[-2px] transition duration-300;
+    @apply w-[165px] sm:h-[50px] h-[45px] max-sm:w-full sm:text-[20px] text-[16px] text-white rounded-[10px] font-semibold grid place-content-center cursor-pointer hover:translate-y-[-2px] transition duration-300;
   }
 }

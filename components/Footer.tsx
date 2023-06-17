@@ -5,7 +5,7 @@ import arrow from "@/public/assets/right-arrow.png";
 import { useState } from "react";
 
 export default function Footer() {
-  const [openFooter, setOpenFooter] = useState(false);
+  const [openFooter, setOpenFooter] = useState(true);
 
   return (
     <>

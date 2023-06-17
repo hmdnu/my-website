@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <section className="w-[70%] md:w-[60%] m-auto h-screen flex-center">
-      <div className="w-full flex max-sm:flex-col gap-10 md:gap-28 lg:gap-30 justify-evenly xs:items-center items-start">
+    <section className="w-[70%] md:w-[60%] m-auto h-screen flex-center ">
+      <div className="w-full flex max-sm:flex-col gap-10 md:gap-28 lg:gap-30 justify-evenly xs:items-center items-start mt-14">
         <Image
           src={pfp}
           loading="lazy"

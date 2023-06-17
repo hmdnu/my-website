@@ -1,4 +1,4 @@
-import "../public/globals.css";
+import "../public/css/globals.css";
 import { Poppins } from "next/font/google";
 import { Nav, Footer, GoTop } from "@/components";
 
