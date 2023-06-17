@@ -20,7 +20,7 @@ export default function Project() {
               <Image
                 loading="lazy"
                 src={project.img}
-                alt={""}
+                alt={"project"}
                 className="w-full rounded-t-[10px]"
               />
               <div className="px-8 py-5 rounded-b-[10px]">
