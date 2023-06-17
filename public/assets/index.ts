@@ -7,6 +7,13 @@ import beritaIndo from "./project/berita-indo.png";
 import pixabayApi from "./project/pixabay-img.png";
 import shareThoughts from "./project/sharethoughts.png";
 import tutorBang from "./project/tutorbang.png";
+import porto from "./project/porto.png";
 
 export const sosmed = { facebook, linkedln, instagram, github };
-export const project = { beritaIndo, pixabayApi, shareThoughts, tutorBang };
+export const project = {
+  beritaIndo,
+  pixabayApi,
+  shareThoughts,
+  tutorBang,
+  porto,
+};

@@ -131,17 +131,18 @@ export const projects = [
       techStack: ["Javascript", "Next.js", "Tailwind", "Mongodb"],
     },
   },
-  // {
-  //   id: 5,
-  //   name: "My Portofolio",
-  //   img: "",
-  //   desc: "My personal portofolio",
-  //   demo: "",
-  //   detail: {
-  //     desc: "This is my personal website portofolio, you can know about my skills and my projects here",
-  //     repo: "",
-  //     demo: "",
-  //     techStack: ["Typescript", "Next.js", "Tailwind"],
-  //   },
-  // },
+  {
+    id: 5,
+    name: "My Portofolio",
+    img: project.porto,
+    desc: "My personal portofolio",
+    demo: "https://hamdanu.vercel.app",
+    detail: {
+      img: project.porto,
+      desc: "This is my personal website portofolio, you can know about my skills and my projects here",
+      repo: "https://github.com/HamdanUbaidillah/hmdnubaidillah",
+      demo: "https://hamdanu.vercel.app",
+      techStack: ["Typescript", "Next.js", "Tailwind"],
+    },
+  },
 ];
