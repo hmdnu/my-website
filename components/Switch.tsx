@@ -30,7 +30,7 @@ export default function Switch() {
           <div
             className={`${
               checked ? "bg-primary left-[26px]" : "bg-white left-[2px]"
-            } absolute top-[2px] w-5 h-5 rounded-full shadow transition-[1s] flex justify-center items-center`}
+            } absolute top-[2px] w-5 h-5 rounded-full shadow transition-all ease-linear flex justify-center items-center`}
           >
             <span
               className={`${

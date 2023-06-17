@@ -1,17 +1,15 @@
 import Image from "next/image";
 import pfp from "@/public/assets/pfp.png";
-import styles from "@/public/style";
+
 import Link from "next/link";
 
 export const metadata = {
-  title: "Home | hamdan.u",
+  title: "Home",
 };
 
 export default function Home() {
   return (
-    <section
-      className={`w-[70%] md:w-[60%] m-auto ${styles.flexCenter} h-screen`}
-    >
+    <section className="w-[70%] md:w-[60%] m-auto h-screen flex-center">
       <div className="w-full flex max-sm:flex-col gap-10 md:gap-28 lg:gap-30 justify-evenly xs:items-center items-start">
         <Image
           src={pfp}
@@ -31,15 +29,12 @@ export default function Home() {
             Web developer based in Indonesia
           </h2>
           <div className="flex gap-4 mt-5">
-            <Link
-              className="w-[165px] h-[50px] max-sm:w-[130px] sm:text-[20px] text-[18px] bg-blue text-white rounded-[10px] font-semibold grid place-content-center cursor-pointer hover:translate-y-[-5px] transition"
-              href={"/about"}
-            >
+            <Link className="button bg-blue hover:bg-[#2ea0ec]" href={"/about"}>
               Get to know
             </Link>
             <Link
-              className="w-[165px] h-[50px] max-sm:w-[130px] sm:text-[20px] text-[18px] bg-darkBlue dark:bg-secondary text-white rounded-[10px] font-semibold grid place-content-center hover:translate-y-[-5px] transition"
-              href={"/"}
+              className="button bg-darkBlue hover:bg-[#496777] dark:bg-secondary hover:dark:bg-[#777777]"
+              href="mailto:hamdanubaidillah0306@gmail.com"
             >
               Lets talk!
             </Link>

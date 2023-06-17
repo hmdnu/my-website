@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { navItems } from "@/constant";
 import Switch from "./Switch";
-import styles from "@/public/style";
 
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
@@ -13,7 +12,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full font-poppins backdrop-blur-sm ">
+    <nav className="fixed top-0 left-0 w-full font-poppins bg-white dark:bg-dark z-10 ">
       <div className="w-[70%] md:w-[60%] max-sm:w-[80%] m-auto flex justify-between items-center py-5 ">
         <Link
           href={"/"}
@@ -49,9 +48,7 @@ export default function Nav() {
       {/* mobile nav */}
       <div>
         {openNav && (
-          <div
-            className={` ${styles.flexCenter} flex-col sm:hidden gap-4 bg-slate-200 dark:bg-primary w-[150px] rounded-[10px] py-4  right-5 absolute transition-[.2s]`}
-          >
+          <div className="flex-center flex-col sm:hidden gap-4 bg-slate-200 dark:bg-primary w-[150px] rounded-[10px] py-4  right-5 absolute transition-[.2s]">
             {navItems.map((item) => (
               <React.Fragment key={item.id}>
                 <Link

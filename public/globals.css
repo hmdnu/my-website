@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #dfdfdf;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 1px;
+}
+@layer components {
+  .main-layout {
+    @apply mt-24 mb-10 w-[70%] md:w-[60%] max-sm:w-[80%] font-poppins m-auto;
+  }
+  .heading-1 {
+    @apply text-primary dark:text-white text-[24px] font-semibold border-b border-stroke pb-3;
+  }
+  .heading-2 {
+    @apply text-primary dark:text-white font-semibold md:text-[22px] sm:text-[20px] text-[20px];
+  }
+  .heading-3 {
+    @apply text-primary dark:text-white font-semibold md:text-[24px] sm:text-[22px] text-[18px];
+  }
+  .paragraph {
+    @apply text-secondary dark:text-[#dddddd] text-[16px];
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .button {
+    @apply w-[165px] h-[50px] max-sm:w-[130px] sm:text-[20px] text-[18px] text-white rounded-[10px] font-semibold grid place-content-center cursor-pointer hover:translate-y-[-2px] transition duration-300;
+  }
+}

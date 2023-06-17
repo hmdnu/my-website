@@ -81,43 +81,40 @@ export const projects = [
     img: project.pixabayApi,
     desc: "Find image from Pixabay",
     demo: "https://pixabay-api-bay.vercel.app/index.html",
-    detail: [
-      {
-        desc: "Find images from Pixabay using Pixabay's API service",
-        repo: "https://github.com/HamdanUbaidillah/pixabay-api",
-        demo: "https://pixabay-api-bay.vercel.app/index.html",
-      },
-    ],
-    techStack: ["Html", "Css", "Javasciprt"],
+    detail: {
+      img: project.pixabayApi,
+      desc: "Find images from Pixabay using Pixabay's API service",
+      repo: "https://github.com/HamdanUbaidillah/pixabay-api",
+      demo: "https://pixabay-api-bay.vercel.app/index.html",
+      techStack: ["Html", "Css", "Javasciprt"],
+    },
   },
   {
     id: 2,
     name: "Berita Indo",
     img: project.beritaIndo,
     desc: "Collection of Indonesian news",
-    demo: "https://hmdn-berita-indo.netlify.app/",
-    detail: [
-      {
-        desc: "Fetching collection of Indonesian news from CNN API",
-        repo: "https://github.com/HamdanUbaidillah/berita-indo",
-        demo: "https://hmdn-berita-indo.netlify.app/",
-      },
-    ],
-    techStack: ["Javascript", "React.js", "Tailwind"],
+    demo: "https://hmdn-berita-indo.netlify.app",
+    detail: {
+      img: project.beritaIndo,
+      desc: "Fetching collection of Indonesian news from CNN API",
+      repo: "https://github.com/HamdanUbaidillah/berita-indo",
+      demo: "https://hmdn-berita-indo.netlify.app",
+      techStack: ["Javascript", "React.js", "Tailwind"],
+    },
   },
   {
     id: 3,
     name: "tutorbang",
     img: project.tutorBang,
     desc: "Landing page for tutoring",
-    detail: [
-      {
-        desc: "Find your best tutor for affordable price with modern teaching method, can be online nor offline",
-        repo: "https://github.com/HamdanUbaidillah/tutorbang.",
-        demo: "https://tutorbang.netlify.app",
-      },
-    ],
-    techStack: ["Javascript", "React.js", "Tailwind"],
+    detail: {
+      img: project.tutorBang,
+      desc: "A Website for finding the best tutor for affordable price, we provide many variety of softskills and hardskills",
+      repo: "https://github.com/HamdanUbaidillah/tutorbang.",
+      demo: "https://tutorbang.netlify.app",
+      techStack: ["Javascript", "React.js", "Tailwind"],
+    },
   },
 
   {
@@ -126,28 +123,25 @@ export const projects = [
     img: project.shareThoughts,
     desc: "Share your thoughts to everyone",
     demo: "https://share-thoughts.vercel.app",
-    detail: [
-      {
-        desc: "Login and share what you have in mind to other people",
-        repo: "https://github.com/HamdanUbaidillah/ShareThoughts",
-        demo: "https://share-thoughts.vercel.app",
-      },
-    ],
-    techStack: ["Javascript", "Next.js", "Tailwind", "Mongodb"],
+    detail: {
+      img: project.shareThoughts,
+      desc: "Login and share what you have in mind to other people",
+      repo: "https://github.com/HamdanUbaidillah/ShareThoughts",
+      demo: "https://share-thoughts.vercel.app",
+      techStack: ["Javascript", "Next.js", "Tailwind", "Mongodb"],
+    },
   },
-  {
-    id: 5,
-    name: "My Portofolio",
-    img: "",
-    desc: "My personal portofolio",
-    demo: "",
-    detail: [
-      {
-        desc: "This is my personal website portofolio, you can know about my skills and my projects here",
-        repo: "",
-        demo: "",
-      },
-    ],
-    techStack: ["Typescript", "Next.js", "Tailwind"],
-  },
+  // {
+  //   id: 5,
+  //   name: "My Portofolio",
+  //   img: "",
+  //   desc: "My personal portofolio",
+  //   demo: "",
+  //   detail: {
+  //     desc: "This is my personal website portofolio, you can know about my skills and my projects here",
+  //     repo: "",
+  //     demo: "",
+  //     techStack: ["Typescript", "Next.js", "Tailwind"],
+  //   },
+  // },
 ];

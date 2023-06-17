@@ -1,21 +1,20 @@
 import Image from "next/image";
-import styles from "@/public/style";
 import { skillsets, sosmeds } from "@/constant";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About | hamdan.u",
+  title: "About",
 };
 
 export default function About() {
   return (
-    <section className="mt-24 mb-10 w-[70%] md:w-[60%] max-sm:w-[80%] font-poppins m-auto">
+    <section className="main-layout">
       {/* about me */}
       <div>
-        <h1 className={`${styles.heading1}`}>About me</h1>
+        <h1 className="heading-1">About me</h1>
         {/* paragraph */}
         <div className="mt-4">
-          <p className={`${styles.paragraph}`}>
+          <p className="paragraph">
             Hello 👋, I{"'"}
             <span className="font-medium">m Hamdan Ubaidillah</span> but you can
             call me <span className="font-medium"> Hamdan / Dani</span>. I{"'"}m
@@ -30,7 +29,7 @@ export default function About() {
             </Link>{" "}
             highschool.
           </p>
-          <p className={`${styles.paragraph} mt-4`}>
+          <p className="paragraph mt-4">
             I started web development in 2022 as a web developer I mainly use
             Javascript ecosystem to build web app and{" "}
             <Link
@@ -47,15 +46,15 @@ export default function About() {
 
       {/* skills */}
       <div className="mt-10">
-        <h1 className={`${styles.heading1}`}>Skills</h1>
+        <h1 className="heading-1">Skills</h1>
         <div className="mt-4 flex max-sm:flex-col gap-5">
           {/* skill box */}
           {skillsets.map((skill) => (
             <div
               key={skill.id}
-              className="mt-4 border-[1px] border-stroke dark:hover:border-secondary hover:bg-stroke dark:hover:bg-secondary w-full rounded-[10px] p-5 cursor-default hover:translate-y-[-5px] transition-[1s]"
+              className="mt-4 border-[1px] border-stroke dark:hover:border-secondary hover:bg-stroke dark:hover:bg-secondary w-full rounded-[10px] p-5 cursor-default hover:translate-y-[-5px] transition duration-[.4s]"
             >
-              <h2 className={`${styles.heading2} mb-1`}>{skill.name}</h2>
+              <h2 className="heading-2 mb-1">{skill.name}</h2>
               <ul className="text-primary dark:text-white flex flex-col">
                 {skill.skills.map((skill, i) => (
                   <li
@@ -73,7 +72,7 @@ export default function About() {
 
       {/* sosmed */}
       <div className="mt-10">
-        <h1 className={`${styles.heading1}`}>Find me on</h1>
+        <h1 className="heading-1">Find me on </h1>
         {/* sosmed box */}
         <div className="mt-4 gap-5 flex max-sm:flex-col">
           {sosmeds.map((sosmed) => (
@@ -81,7 +80,7 @@ export default function About() {
               href={sosmed.link}
               target="_blank"
               key={sosmed.id}
-              className="mt-3 border border-stroke dark:hover:border-secondary hover:bg-stroke dark:hover:bg-secondary rounded-[10px] px-5 py-3 w-full flex items-center md:gap-4 max-sm:gap-4 hover:translate-y-[-5px] gap-2 transition-[1s] "
+              className="mt-3 border border-stroke dark:hover:border-secondary hover:bg-stroke dark:hover:bg-secondary rounded-[10px] px-5 py-3 w-full flex items-center md:gap-4 max-sm:gap-4 hover:translate-y-[-5px] gap-2 transition duration-[.4s]"
             >
               <Image
                 src={sosmed.img}
@@ -96,10 +95,10 @@ export default function About() {
             </Link>
           ))}
         </div>
-        <div className={`${styles.paragraph} mt-5`}>
+        <div className="paragraph mt-5">
           You can also reach me via email at:{" "}
           <Link
-            href="hamdanubaidillah0306@gmail.com"
+            href="mailto:hamdanubaidillah0306@gmail.com"
             className="font-semibold hover:underline"
             target="_blank"
           >
