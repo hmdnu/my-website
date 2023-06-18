@@ -1,4 +1,3 @@
-import { projects } from "@/constant";
 import { DetailProject } from "@/components";
 
 export const metadata = {

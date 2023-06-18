@@ -60,10 +60,10 @@ export default function Detail() {
         {/* tech box */}
         <div>
           <h1 className="heading-1 mt-10">Tech Stack</h1>
-          <div className="flex sm:gap-5 gap-3 mt-5">
+          <div className="flex justify-start flex-wrap items-start sm:gap-5 gap-3 mt-5">
             {detail.techStack?.map((stack: string, i: number) => (
               <div
-                className="border border-stroke dark:hover:border-secondary rounded-[5px] sm:w-[150px] w-full h-[50] p-2 text-center hover:bg-stroke dark:hover:bg-secondary hover:translate-y-[-4px] transition duration-200"
+                className="border border-stroke dark:hover:border-secondary rounded-[5px] sm:w-[150px] w-[140px] max-xs:w-full h-[50] p-2 text-center hover:bg-stroke dark:hover:bg-secondary hover:translate-y-[-4px] transition duration-200"
                 key={i}
               >
                 <h1 className="sm:text-[20px] text-[16px] font-medium text-primary dark:text-white">
