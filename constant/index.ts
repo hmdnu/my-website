@@ -70,7 +70,7 @@ export const sosmeds = [
     id: 4,
     name: "Github",
     img: sosmed.github,
-    link: "https://github.com/HamdanUbaidillah",
+    link: "https://github.com/hmdnubaidillah",
   },
 ];
 
