@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { navItems } from "@/constant";
 import Switch from "./Switch";
@@ -10,6 +10,16 @@ export default function Nav() {
   function handleOpenNav(e: React.MouseEvent) {
     setOpenNav((prev) => !prev);
   }
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+
+    body?.addEventListener("click", (e: any) => {
+      if (e.target.id !== "nav-container") {
+        setOpenNav(false);
+      }
+    });
+  }, []);
 
   return (
     <nav className="fixed top-0 left-0 w-full font-poppins bg-white dark:bg-dark z-10 ">
@@ -48,7 +58,10 @@ export default function Nav() {
       {/* mobile nav */}
       <div>
         {openNav && (
-          <div className="flex-center flex-col sm:hidden gap-4 bg-slate-200 dark:bg-primary w-[150px] rounded-[10px] py-4  right-5 absolute transition-[.2s]">
+          <div
+            id="nav-container"
+            className="flex-center flex-col sm:hidden gap-4 bg-slate-200 dark:bg-primary w-[150px] rounded-[10px] py-4  right-5 absolute transition-[.2s]"
+          >
             {navItems.map((item) => (
               <React.Fragment key={item.id}>
                 <Link
