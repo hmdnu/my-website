@@ -7,15 +7,15 @@ import Switch from "./Switch";
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
 
-  function handleOpenNav(e: React.MouseEvent) {
+  function handleOpenNav() {
     setOpenNav((prev) => !prev);
   }
 
   useEffect(() => {
     const body = document.querySelector("body");
 
-    body?.addEventListener("click", (e: any) => {
-      if (e.target.id !== "nav-container") {
+    body?.addEventListener("click", (e: MouseEvent) => {
+      if (e.target instanceof HTMLElement && e.target.id !== "nav-container") {
         setOpenNav(false);
       }
     });
