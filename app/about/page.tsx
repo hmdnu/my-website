@@ -15,11 +15,10 @@ export default function About() {
         {/* paragraph */}
         <div className="mt-4">
           <p className="paragraph">
-            Hello 👋, I{"'"}
-            <span className="font-medium">m Hamdan Ubaidillah</span> but you can
-            call me <span className="font-medium"> Hamdan / Dani</span>. I{"'"}m
-            a web developer from Indonesia and I{"'"}m currently 19 years old. I
-            was born and live in Pandaan, East Java. I graduated from{" "}
+            Hello 👋, I<span className="font-medium">m Hamdan Ubaidillah</span>{" "}
+            but you can call me <span className="font-medium"> Hamdan</span>. Im
+            a web developer from Indonesia and Im currently 19 years old. I was
+            born and live in Pandaan, East Java. I graduated from{" "}
             <Link
               href={"https://www.smarifda.sch.id"}
               target="_blank"
@@ -31,15 +30,7 @@ export default function About() {
           </p>
           <p className="paragraph mt-4">
             I started web development in 2022 as a web developer I mainly use
-            Javascript ecosystem to build web app and{" "}
-            <Link
-              href={"https://nextjs.org"}
-              target="_blank"
-              className="font-medium cursor-pointer hover:underline"
-            >
-              Next.js
-            </Link>{" "}
-            is my favorite framework.
+            Javascript ecosystem to build web app.
           </p>
         </div>
       </div>
