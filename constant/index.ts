@@ -108,6 +108,7 @@ export const projects = [
     name: "tutorbang",
     img: project.tutorBang,
     desc: "Landing page for tutoring",
+    demo: "https://tutorbang.netlify.app",
     detail: {
       img: project.tutorBang,
       desc: "A Website for finding the best tutor for affordable price, we provide many variety of softskills and hardskills",
