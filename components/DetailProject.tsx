@@ -1,13 +1,14 @@
 "use client";
 import { projects } from "@/constant";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Detail() {
-  const searchParams = useSearchParams();
-  const name = searchParams.get("name");
+  const pathname = usePathname();
+  const decodeUri = decodeURI(pathname).split("/");
+  const name = decodeUri[decodeUri.length - 1];
 
   const [detail, setDetail] = useState<any>({});
 
@@ -24,11 +25,7 @@ export default function Detail() {
     <section className="main-layout">
       <h1 className="heading-1">{name}</h1>
       <div className="mt-5">
-        <Link
-          href={`${detail.demo}`}
-          target="_blank"
-          className="drop-shadow-md cursor-pointer"
-        >
+        <Link href={`${detail.demo}`} target="_blank" className="drop-shadow-md cursor-pointer">
           <Image
             src={detail.img}
             loading="lazy"
@@ -66,9 +63,7 @@ export default function Detail() {
                 className="border border-stroke dark:hover:border-secondary rounded-[5px] sm:w-[150px] w-[140px] max-xs:w-full h-[50] p-2 text-center hover:bg-stroke dark:hover:bg-secondary hover:translate-y-[-4px] transition duration-200"
                 key={i}
               >
-                <h1 className="sm:text-[20px] text-[16px] font-medium text-primary dark:text-white">
-                  {stack}
-                </h1>
+                <h1 className="sm:text-[20px] text-[16px] font-medium text-primary dark:text-white">{stack}</h1>
               </div>
             ))}
           </div>

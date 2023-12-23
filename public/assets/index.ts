@@ -8,6 +8,7 @@ import pixabayApi from "./project/pixabay-img.png";
 import shareThoughts from "./project/sharethoughts.png";
 import tutorBang from "./project/tutorbang.png";
 import porto from "./project/porto.png";
+import javaReomit from "./project/javaReomit.png";
 
 export const sosmed = { facebook, linkedln, instagram, github };
 export const project = {
@@ -16,4 +17,5 @@ export const project = {
   shareThoughts,
   tutorBang,
   porto,
+  javaReomit,
 };
