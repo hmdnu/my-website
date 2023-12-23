@@ -26,7 +26,15 @@ export default function About() {
             >
               SMA Maarif NU Pandaan
             </Link>{" "}
-            highschool.
+            highschool. Im currently studying at{" "}
+            <Link
+              href={"https://www.polinema.ac.id/"}
+              target="_blank"
+              className="font-medium hover:underline"
+            >
+              State Polytechnic of Malang
+            </Link>{" "}
+            as a computer science student.
           </p>
           <p className="paragraph mt-4">
             I started web development in 2022 as a web developer I mainly use
